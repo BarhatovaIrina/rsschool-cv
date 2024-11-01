@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irina Barkhatova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="wrapper">
         <header>
             <nav>
                 <ul>
@@ -32,37 +39,102 @@
             </nav>
         </header>
         <main>
-            <section>
-                <h1>Irina Barkhatova</h1>
-                <h2>About me</h2>
+            <section class="about">
+                <div class="about-img">
+                    <img src="images/photo.jpg">
+                </div>
+                <div class="about-text">
+                    <h1>Irina Barkhatova</h1>
+                    <h2>About me</h2>
+                    <p>
+                        In recent years, I have been working as a teacher at a technical university, 
+                        i’m teaching IT disciplines (computer science, programming basics (C#, Java, Python), office technologies). </p>
+                    <p>
+                        I decided to become a frontend developer, to move away from theory to practice. </p>
+                    <p>I want to upgrate my personal skills and grow professionally.</p>
+                </div>
             </section>
             <section>
                 <h2>Skills</h2>
+                <ul class="skills">
+                    <li class="skills-item"><img src="images/html.png" alt="html-logo"><span>HTML</span></li>
+                    <li class="skills-item"><img src="images/css.jpg" alt="css-logo"><span>CSS</span></li>
+                    <li class="skills-item"><img src="images/js.jpg" alt="js-logo"><span>JS</span></li>
+                    <li class="skills-item"><img src="images/react.png" alt="react-logo"><span>React</span></li>
+                    <li class="skills-item"><img src="images/json.png" alt="json-logo"><span>JSON</span></li>
+                    <li class="skills-item"><img src="images/figma.png" alt="figma-logo"><span>Figma</span></li>
+                </ul>
+                <!-- <p>
+                    C# (basic knowledge), Python (basic knowledge), Java & Framework SpringBoot(basic knowledge), PostreSql (basic knowledge)
+                </p> -->
             </section>
-            <section>
+            <section class="education">
                 <h2>Education</h2>
+                    <ul>
+                        <li>Course "Javascript/Front-End Program", <a href="https://rs.school/">RS School </a> (in progress), 2024</li>
+                        <li>Internship in "The Alpha ecosystem" (Next.js, React, TS), frontend developer, 2024</li>
+                        <li>Course "Frontend developer" (HTML, CSS, SCSS, JS, React), <a href="https://itgirlschool.com/new_frontend">ItGirlSchool</a>, 2023 </li>
+                        <li>Course "Frontend developer" (HTML, CSS, JS), <a href="https://gb.ru/">GeekBrains</a>, 2022</li>
+                    </ul> 
             </section>
             <section>
                 <h2>Projects</h2>
+                <div class="projects">                
+                    <div class="projects-item">
+                        <a href="https://github.com/BarhatovaIrina/Landing_for_psychologist?tab=readme-ov-file"><img src="images/psyholog.png" alt="project-psyholog"></a>
+                        <h3>Psychologist's landing page</h3>
+                        <p>HTML, CSS, JS</p>
+                    </div>
+                    <div class="projects-item">
+                        <a href="https://github.com/BarhatovaIrina/marketplace"><img src="images/marketplace.png" alt="project-marketplace"></a>
+                        <h3>Marketplace</h3>
+                        <p>HTML, SCSS, React, API, Redux, React-routing</p>
+                    </div>
+                    <div class="projects-item">
+                        <a href="https://github.com/BarhatovaIrina/react-english-words"><img src="images/words.png" alt="project-words"></a>
+                        <h3>Trainer for learning English words</h3>
+                        <p>HTML, SCSS, JS, React, RegExp, MobX</p>
+                    </div>
+                </div>
             </section>
-            <section>
+            <section class="coding">
                 <h2>Code example</h2>
-
+                <p class="coding-link">
+                    Task from <a href="https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript" class="coding-link">codewars</a>: "Given an array of integers your solution should find the smallest integer.
+                </p>
+                <div class="coding-block">
+                    function findSmallestInt(arr) {<br>
+                        &nbsp;&nbsp;let m = arr[0];<br>
+                        &nbsp;&nbsp;for (let i = 1; i < arr.length; i++)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if (arr[i] < m)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m = arr[i];<br>
+                        &nbsp;&nbsp;return m;<br>
+                    }
+                </div>
             </section>
-            <section>
+            <section class="contacts">
                 <h2>Contacts</h2>
+                <ul>
+                    <li>
+                        Email: <a href="mailto:biriska@mail.ru">biriska@mail.ru</a>
+                    </li>
+                    <li>
+                        GitHub: <a href="https://github.com/BarhatovaIrina">BarhatovaIrina</a>
+                        
+                    <li>
+                        Telegam: <a href="https://t.me/Irina_Barkhatova">@Irina_Barkhatova</a>
+                    </li>
+                </ul>
             </section>
         </main>
     <footer>
-        <div>
-            <a href="https://github.com/BarhatovaIrina"><img src="images/github.png" alt="github"> My github</a>
+        <div class="footer-ref">
+            <a href="https://github.com/BarhatovaIrina"><img src="images/github-2.png" alt="github"></a>
         </div>
-        <div>
-            <a href="https://rs.school/courses/javascript-ru"><img src="" alt="rsschool"></a>
+        <div class="footer-ref">
+            <a href="https://rs.school/courses/javascript-ru"><img src="images/rs-school-logo.svg" alt="rsschool"></a>
         </div>
-        <div>
-            <p>2024</p>
-        </div>
+        <p class="footer-text">2024</p>
     </footer>
     </div>
 </body>
