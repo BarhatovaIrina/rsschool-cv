@@ -1,11 +1,11 @@
 * {
     margin:0;
-    box-sizing: border-box;
-    font-family: Roboto, Tahoma;
 }
-html {
+html, body {
     background: #eceada; 
     font-size: 18px;
+    box-sizing: border-box;
+    font-family: Roboto, Tahoma;
 }
 
 .wrapper {
